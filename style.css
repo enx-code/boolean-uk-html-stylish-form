@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background {
+    
+    height: auto;
+    width: 35%;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+body {
+    display: grid;
+    place-items: center;
+    margin-top: 70px;
+}
+form {
+    display: grid;
+    padding: 5% 15% 15% 15%;
+    gap: 15px;
+}
+input {
+    border-bottom: 2px solid grey;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    padding: 10px 0;
+}
+label {
+    color: grey;
+    display: grid;
+}
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+}
+textarea {
+    border-bottom: 2px solid grey;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    margin: 10px 0;
+    padding-bottom: 20px;
+}
+select {
+    border-bottom: 2px solid rgb(214, 210, 210);
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    padding: 10px 0px;
+    color: rgb(96, 94, 94);
+    font-size: 16px;
+}
+[type|=submit] {
+    border-radius: 50px;
+    padding: 10px 0 10px 0;
+    color: white;
+    background-image: linear-gradient(to right, rgba(249, 16, 218, 0.482), rgb(135, 48, 217), rgb(0, 221, 255));
+    font-size: 16px;
+    border-bottom: transparent;
+    animation-name: submit;
+    animation-duration: 7s;
+}
+@keyframes submit {
+    0% {color: red;}
+    20% {color: pink;}
+    40% {color: blue;}
+    60% {color: yellow;}
+    80% {color: green;}
+    90% {color: wheat;}
+    100% {color: white;}
+}
+[placeholder] {
+    opacity: 0.3;
+    font-size: 16px;
+}
+@media screen and (max-width: 570px){
+    .background {
+        height: auto;
+        width: 70%;
+        background-color: white;
+        border-radius: 10px;
+    }
+    
+}
+@media screen and (max-width: 300px){
+    .background {
+        height: auto;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+    }
+    
+}
